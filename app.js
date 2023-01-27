@@ -6,7 +6,7 @@ const options = {
     data() {
         return {
             monneyto: "",
-            monneyFrom : 0,
+            monneyFrom : "",
             selectFrom : "AUD",
             selectTo : "BGN",
             currencies : [],

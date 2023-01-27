@@ -4,7 +4,7 @@ import {selectCurrency} from "./SelectCurrency.js";
 const Search = {
     data() {
         return {
-            numberfrom: 0,
+            numberfrom: "",
             selectfrom: "AUD",
         };
     },
