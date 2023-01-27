@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Convertiseur</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convertiseeur de monnaie" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="app.js" defer></script>
+<body>
+<div id="app">
+    <main>
+        <div class="header">
+            <img class="logo" src="logo.svg" alt="" />
+            <h1>EASY Coins Converter</h1>
+        </div>
+        <form @submit.prevent="convertMonney">
+            <h2>Convertir</h2>
+            <div class="data">
+                <search :selectto ="selectTo" :currencies="currencies" @numberfrom="getNumberFrom" @selectfrom="getSelectFrom"></search>
+<!--                <button class="switch , data"><img src="switch.svg" /></button>-->
+                <result :selectfrom ="selectFrom" :currencies="currencies" :monneyto="monneyto" @selectto="getSelectTo"></result>
+            </div>
+            <button type="submit">CONVERTIR</button>
+
+
+        </form>
+    </main>
+
+</div>
+</body>
+</html>
