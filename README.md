@@ -1,3 +1,3 @@
-# Monney Converter
+# Money Converter
 
 VUEJS PROJECT
